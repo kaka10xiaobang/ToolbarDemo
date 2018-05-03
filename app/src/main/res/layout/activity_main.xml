@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:logo="@mipmap/ic_launcher"
+        app:title="标题"
+        app:titleTextColor="#fff"
+        app:subtitle="副标题"
+        app:subtitleTextColor="#fff"
+        app:navigationIcon="@drawable/ic_menu"
+        android:theme="@style/Base.Theme.AppCompat.Light"
+        app:popupTheme="@style/toolBar_pop_item"
+        >
+
+       <!-- <TextView
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="view"
+            />-->
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="自定义toolbar用法"
+        android:onClick="onCustomView"
+        />
+
+</RelativeLayout>
